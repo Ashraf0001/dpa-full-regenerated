@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include ../README.md
+include ../data/*.csv
+recursive-include examples *.py
+recursive-include tests *.py
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude *.so
+global-exclude *.dylib
+global-exclude *.dll
