@@ -31,10 +31,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ashraf96/dpa-full-regenerated"
-Repository = "https://github.com/ashraf96/dpa-full-regenerated"
-Documentation = "https://github.com/ashraf96/dpa-full-regenerated#readme"
-"Bug Tracker" = "https://github.com/ashraf96/dpa-full-regenerated/issues"
+Homepage = "https://github.com/Ashraf0001/dpa-full-regenerated"
+Repository = "https://github.com/Ashraf0001/dpa-full-regenerated"
+Documentation = "https://github.com/Ashraf0001/dpa-full-regenerated#readme"
+"Bug Tracker" = "https://github.com/Ashraf0001/dpa-full-regenerated/issues"
 
 [project.scripts]
 dpa = "dpa.__main__:main"
