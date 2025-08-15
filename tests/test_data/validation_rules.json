@@ -1,0 +1,26 @@
+[
+  {
+    "name": "positive_amounts",
+    "column": "amount",
+    "rule_type": "range",
+    "expression": "0,1000",
+    "message": "Amount should be between 0 and 1000",
+    "severity": "error"
+  },
+  {
+    "name": "valid_countries",
+    "column": "country",
+    "rule_type": "sql",
+    "expression": "country IN ('US', 'UK', 'CA', 'AU', 'DE', 'FR', 'JP')",
+    "message": "Country should be one of the valid countries",
+    "severity": "warning"
+  },
+  {
+    "name": "user_id_range",
+    "column": "user_id",
+    "rule_type": "range",
+    "expression": "1,10000",
+    "message": "User ID should be between 1 and 10000",
+    "severity": "error"
+  }
+]

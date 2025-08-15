@@ -17,6 +17,9 @@ fn main() -> Result<()> {
         Some(("profile", m)) | Some(("p", m)) => engine::profile_cmd(m),
         Some(("agg", m)) | Some(("a", m)) => engine::agg_cmd(m),
         Some(("join", m)) | Some(("j", m)) => engine::join_cmd(m),
+        Some(("validate", m)) | Some(("v", m)) => engine::validate_cmd(m),
+        Some(("sample", m)) => engine::sample_cmd(m),
+        Some(("split", m)) => engine::split_cmd(m),
         _ => {
             println!("See --help for usage.");
             Ok(())

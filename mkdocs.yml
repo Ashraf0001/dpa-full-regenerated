@@ -1,0 +1,112 @@
+site_name: Data Processing Accelerator (DPA)
+site_description: High-performance data processing tool built with Rust and Polars, featuring CLI and Python API
+site_author: DPA Team
+site_url: https://dpa-docs.readthedocs.io/
+
+repo_name: dpa-full-regenerated
+repo_url: https://github.com/your-username/dpa-full-regenerated
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.code.select
+  icon:
+    repo: fontawesome/brands/github
+  favicon: assets/images/favicon.png
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - search
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/dpa-full-regenerated
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/dpa/
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Quick Start: getting-started/quick-start.md
+    - Installation: getting-started/installation.md
+    - First Steps: getting-started/first-steps.md
+    - Configuration: getting-started/configuration.md
+  - User Guide:
+    - Overview: user-guide/overview.md
+    - CLI Usage: user-guide/cli-usage.md
+    - Python API: user-guide/python-api.md
+    - Best Practices: user-guide/best-practices.md
+  - Features:
+    - Data Profiling: features/data-profiling.md
+    - Data Validation: features/data-validation.md
+    - Data Sampling: features/data-sampling.md
+    - File Operations: features/file-operations.md
+    - Aggregations: features/aggregations.md
+    - Joins: features/joins.md
+    - Performance: features/performance.md
+  - Examples:
+    - Basic Usage: examples/basic-usage.md
+    - Data Quality: examples/data-quality.md
+    - Machine Learning: examples/machine-learning.md
+    - ETL Pipelines: examples/etl-pipelines.md
+    - Performance Optimization: examples/performance-optimization.md
+  - API Reference:
+    - CLI Commands: api/cli-commands.md
+    - Python API Reference: api/python-api.md
+    - Configuration Options: api/configuration.md
+    - Error Handling: api/error-handling.md
+  - Development:
+    - Contributing: development/contributing.md
+    - Building from Source: development/building.md
+    - Testing: development/testing.md
+    - Architecture: development/architecture.md
+  - About:
+    - Changelog: about/changelog.md
+    - License: about/license.md
+    - Roadmap: about/roadmap.md
