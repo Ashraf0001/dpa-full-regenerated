@@ -36,8 +36,7 @@ pub fn write_df(df: &DataFrame, output: &str) -> Result<()> {
     match ext.as_str() {
         "parquet" | "pq" => {
             let w = ParquetWriter::new(std::fs::File::create(output)?);
-            w.with_statistics(StatisticsOptions::default())
-                .with_compression(ParquetCompression::Zstd(None))
+            w.with_compression(ParquetCompression::Zstd(None))
                 .finish(&mut df.clone())?;
         }
         "csv" => {
