@@ -70,8 +70,8 @@ DPA consistently outperforms traditional data processing tools:
 ### Quick Install
 ```bash
 # Clone the repository
-git clone https://github.com/Ashraf0001/dpa-full-regenerated.git
-cd dpa-full-regenerated
+git clone https://github.com/Ashraf0001/data-processing-accelerator-dpa.git
+cd data-processing-accelerator-dpa
 
 # Build Rust binary
 cargo build --release
@@ -108,7 +108,7 @@ This project is licensed under the MIT License - see the [LICENSE](about/license
 
 **Made with ❤️ by the DPA Team**
 
-[GitHub](https://github.com/Ashraf0001/dpa-full-regenerated) • [Issues](https://github.com/Ashraf0001/dpa-full-regenerated/issues) • [Discussions](https://github.com/Ashraf0001/dpa-full-regenerated/discussions)
+[GitHub](https://github.com/Ashraf0001/data-processing-accelerator-dpa) • [Issues](https://github.com/Ashraf0001/data-processing-accelerator-dpa/issues) • [Discussions](https://github.com/Ashraf0001/data-processing-accelerator-dpa/discussions)
 
 </div>
 

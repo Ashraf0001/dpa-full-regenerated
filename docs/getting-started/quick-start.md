@@ -25,8 +25,8 @@ DPA is a high-performance data processing tool built with Rust and Polars, featu
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/dpa-full-regenerated
-   cd dpa-full-regenerated
+   git clone https://github.com/Ashraf0001/data-processing-accelerator-dpa
+cd data-processing-accelerator-dpa
    ```
 
 2. **Build the Rust binary**:

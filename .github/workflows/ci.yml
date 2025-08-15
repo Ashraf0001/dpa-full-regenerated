@@ -179,5 +179,5 @@ jobs:
     - name: Deployment Status
       run: |
         echo "🚀 Deployment completed successfully!"
-        echo "📚 Documentation: ${{ needs.docs.outputs.page_url || 'https://ashraf0001.github.io/dpa-full-regenerated/' }}"
+        echo "📚 Documentation: ${{ needs.docs.outputs.page_url || 'https://ashraf0001.github.io/data-processing-accelerator-dpa/' }}"
         echo "📦 Artifacts: Available in GitHub Actions artifacts"

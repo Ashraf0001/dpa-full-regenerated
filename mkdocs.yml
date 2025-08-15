@@ -1,10 +1,10 @@
 site_name: Data Processing Accelerator (DPA)
 site_description: High-performance data processing tool built with Rust and Polars, featuring CLI and Python API
 site_author: DPA Team
-site_url: https://ashraf0001.github.io/dpa-full-regenerated/
+site_url: https://ashraf0001.github.io/data-processing-accelerator-dpa/
 
-repo_name: dpa-full-regenerated
-repo_url: https://github.com/Ashraf0001/dpa-full-regenerated
+repo_name: data-processing-accelerator-dpa
+repo_url: https://github.com/Ashraf0001/data-processing-accelerator-dpa
 edit_uri: edit/feature-testing/docs/
 
 theme:
@@ -63,7 +63,7 @@ extra:
     provider: mike
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Ashraf0001/dpa-full-regenerated
+      link: https://github.com/Ashraf0001/data-processing-accelerator-dpa
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/dpa/
   analytics:

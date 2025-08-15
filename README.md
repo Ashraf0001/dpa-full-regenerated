@@ -49,8 +49,8 @@ A high-performance data processing tool built with Rust and Polars, featuring bo
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd dpa-full-regenerated
+   git clone https://github.com/Ashraf0001/data-processing-accelerator-dpa.git
+   cd data-processing-accelerator-dpa
    ```
 
 2. **Build the Rust binary**:

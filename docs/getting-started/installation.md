@@ -49,8 +49,8 @@ brew install python3
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/dpa-full-regenerated
-cd dpa-full-regenerated
+git clone https://github.com/Ashraf0001/data-processing-accelerator-dpa
+cd data-processing-accelerator-dpa
 
 # Build the Rust binary
 cargo build --release
@@ -83,7 +83,7 @@ python -c "import dpa_core; print('DPA installed successfully!')"
 pip install dpa
 
 # Or install from GitHub
-pip install git+https://github.com/your-username/dpa-full-regenerated.git
+pip install git+https://github.com/Ashraf0001/data-processing-accelerator-dpa.git
 ```
 
 ### Method 3: Using Cargo (Rust Only)
@@ -93,7 +93,7 @@ pip install git+https://github.com/your-username/dpa-full-regenerated.git
 cargo install dpa
 
 # Or install from GitHub
-cargo install --git https://github.com/your-username/dpa-full-regenerated.git
+cargo install --git https://github.com/Ashraf0001/data-processing-accelerator-dpa.git
 ```
 
 ## Platform-Specific Instructions
