@@ -1,10 +1,13 @@
 [package]
 name = "dpa"
-version = "0.2.2"
+version = "0.2.3"
 edition = "2021"
 description = "Data Processing Accelerator (Rust + Polars) — CLI + PyO3 bindings"
 license = "MIT"
-authors = ["You <you@example.com>"]
+authors = ["DPA Contributors <contributors@dpa.dev>"]
+repository = "https://github.com/Ashraf0001/data-processing-accelerator-dpa"
+keywords = ["data-processing", "polars", "rust", "cli", "data-analysis"]
+categories = ["data-processing", "command-line-utilities"]
 
 [lib]
 name = "dpa_core"
@@ -15,23 +18,12 @@ name = "dpa"
 path = "src/main.rs"
 
 [dependencies]
-anyhow = "1"
-thiserror = "1"
-clap = { version = "4", features = ["derive"] }
-rayon = "1"
-serde = { version = "1", features = ["derive"] }
-serde_json = "1"
-indicatif = "0.17"
-rand = { version = "0.8", features = ["std"] }
-chrono = { version = "0.4", features = ["serde"] }
-
-# Polars + IO formats
-# was: 0.43
-# Keep it minimal: no `dtype-full`, no categorical
-# Minimal, stable features. Add "sql" for sql_expr.
-# Minimal, stable features. Add "sql" for sql_expr.
-polars = { version = "0.43", default-features = false, features = ["lazy", "parquet", "csv", "json", "sql"] }
-pyo3 = { version = "0.22", features = ["extension-module"] }
+polars = { version = "0.37", features = ["lazy", "csv", "parquet", "json", "strings", "temporal", "rolling_window", "object"] }
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+pyo3 = { version = "0.21", features = ["extension-module"] }
 
 [profile.release]
 codegen-units = 1
