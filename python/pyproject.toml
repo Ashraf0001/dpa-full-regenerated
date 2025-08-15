@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "dpa-cli"
-version = "0.2.1"
+version = "0.2.2"
 description = "Data Processing Accelerator (CLI + Python API, powered by Rust Polars)"
 readme = "README.md"
 requires-python = ">=3.8"
