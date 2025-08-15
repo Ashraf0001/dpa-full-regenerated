@@ -1,7 +1,0 @@
-{
-  "user_id": "Int64",
-  "amount": "Float64",
-  "country": "String",
-  "timestamp": "Int64",
-  "channel": "String"
-}
