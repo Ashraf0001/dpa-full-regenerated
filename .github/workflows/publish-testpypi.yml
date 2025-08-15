@@ -61,15 +61,16 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements-dev.txt
-        pip install maturin
         
-    - name: Build Python bindings
+    - name: Build Python CLI package
       run: |
-        maturin build --release
+        cd python
+        python -m build
         
     - name: Install Python package
       run: |
-        pip install target/wheels/*.whl
+        cd python
+        pip install dist/*.whl
         
     - name: Run Python tests
       run: |
@@ -104,7 +105,7 @@ jobs:
     - name: Install build dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install maturin build twine requests
+        pip install build twine requests
         
     - name: Get version from Cargo.toml
       id: get_version
@@ -133,10 +134,6 @@ jobs:
     - name: Build Rust binary
       run: |
         cargo build --release --bin dpa
-        
-    - name: Build Python wheel
-      run: |
-        maturin build --release
         
     - name: Build Python CLI package
       run: |
@@ -184,14 +181,6 @@ jobs:
         asset_name: dpa-${{ steps.get_version.outputs.version }}-x86_64-unknown-linux-gnu
         asset_content_type: application/octet-stream
       if: steps.create_release.outputs.upload_url != ''
-        
-    - name: Publish Python wheel to TestPyPI
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.TESTPYPI_API_TOKEN }}
-        TWINE_REPOSITORY_URL: https://test.pypi.org/legacy/
-      run: |
-        twine upload --verbose target/wheels/*.whl
         
     - name: Publish Python CLI to TestPyPI
       env:
