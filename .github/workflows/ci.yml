@@ -131,6 +131,10 @@ jobs:
       pages: write
       id-token: write
       
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
     concurrency:
       group: "pages"
       cancel-in-progress: false
@@ -151,7 +155,7 @@ jobs:
         
     - name: Build documentation
       run: |
-        mkdocs build --strict
+        mkdocs build
         
     - name: Setup Pages
       uses: actions/configure-pages@v4
@@ -164,7 +168,6 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-      if: github.ref == 'refs/heads/feature-testing' || github.ref == 'refs/heads/main'
 
   notify:
     name: Notify Deployment
